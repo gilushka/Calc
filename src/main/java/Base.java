@@ -40,5 +40,6 @@ public class Base {
          }
 
         System.out.printf("%+5.4f", res);
+         scanner.close();
     }
 }
