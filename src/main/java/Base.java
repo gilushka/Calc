@@ -39,6 +39,6 @@ public class Base {
                  break;
          }
 
-        System.out.printf("%+010.4f", res);
+        System.out.printf("%+5.4f", res);
     }
 }
