@@ -1,22 +1,27 @@
 import java.util.Scanner;
 
+/**
+ * @author Кочергин Евгений
+ */
+
 public class Base {
 
-     public static void main(String[] args) {
+    /**
+     * Выходных параметров нет, метод осуществляет вывод в
+     * консоль результатов расчетов. При этом позволяет выбрать тип
+     * проводимой операции.
+     * В каком месте должны ставиться доки? На что тут ругается IDEA??
+     */
 
-        /**
-         * @author Кочергин Евгений
-         * @return Выходных параметров нет, метод осуществляет вывод в
-         * консоль результатов расчетов. При этом позволяет выбрать тип
-         * проводимой операции.
-         * В каком месте должны ставиться доки? На что тут ругается IDEA??
-         */
+    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-         double res=0;
+        double res = 0;
 
-        System.out.println("Выберете операцию (сложение - 1, вычитание - 2, умножение - 3, деление - 4):");
-        int oper = scanner.nextInt();
+        System.out.println("Выберете операцию (+, -, *, /):");
+
+        String sOper = scanner.next();
+        char cOper = sOper.charAt(0);
 
         System.out.println("Введите первое число:");
         double num1 = scanner.nextDouble();
@@ -24,22 +29,25 @@ public class Base {
         System.out.println("Введите второе число:");
         double num2 = scanner.nextDouble();
 
-         switch(oper) {
-             case 1:
-                 res = num1 + num2;
-                 break;
-             case 2:
-                 res = num1 - num2;
-                 break;
-             case 3:
-                 res = num1 * num2;
-                 break;
-             case 4:
-                 res = num1 / num2;
-                 break;
-         }
+        switch (cOper) {
+            case '+':
+                res = num1 + num2;
+                break;
+            case '-':
+                res = num1 - num2;
+                break;
+            case '*':
+                res = num1 * num2;
+                break;
+            case '/':
+                res = num1 / num2;
+                break;
+            default:
+                System.out.println("Некорректная операция");
+                break;
+        }
 
         System.out.printf("%+5.4f", res);
-         scanner.close();
+        scanner.close();
     }
 }
