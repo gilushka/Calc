@@ -25,12 +25,15 @@ public class Base {
             case 1:
                 Calculator calculator = new Calculator();
                 calculator.start();
+                break;
             case 2:
                 Wordarray wordarray = new Wordarray();
                 wordarray.start();
+                break;
             case 3:
                 Backcounting backcounting = new Backcounting();
                 backcounting.start();
+                break;
             default:
                 System.out.println("Была выбрана несуществующая операция");
         }
