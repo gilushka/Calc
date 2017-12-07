@@ -3,7 +3,7 @@ package Wordarray;
 import java.util.Scanner;
 
 /**
- * Created by user on 07.12.2017.
+ * Класс реализующий работу массива слов
  */
 public class Wordarray {
     public void start(){
@@ -13,10 +13,17 @@ public class Wordarray {
         int iWordCount = scanner.nextInt();
 
         String aWordArray[] = new String[iWordCount];
-        for (int i = 0; i < iWordCount-1; i++) {
+        for (int i = 0; i < iWordCount; i++) {
             System.out.println("Ввыдите " + i+1 + " слово массива:");
             aWordArray[i] = scanner.next();
         }
+
+        String sLongWord = aWordArray[0];
+        for (int i = 1; i < iWordCount; i++) {
+            if (sLongWord.length() < aWordArray[i].length())
+                sLongWord = aWordArray[i];
+        }
+
     }
 
 }
