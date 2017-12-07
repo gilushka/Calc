@@ -1,4 +1,5 @@
 import Calc.Calculator;
+import Wordarray.Wordarray;
 
 import java.util.Scanner;
 
@@ -21,8 +22,11 @@ public class Base {
             Calculator calculator = new Calculator();
             calculator.start();
         }
-        else
-            System.out.println("Массивы находятся в процессе производства");
+        else if (iOper == 2){
+            Wordarray wordarray = new Wordarray();
+            wordarray.start();
+        }
+            System.out.println("Была выбрана несуществующая операция");
         scanner.close();
 
     }

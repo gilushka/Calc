@@ -14,7 +14,7 @@ public class Wordarray {
 
         String aWordArray[] = new String[iWordCount];
         for (int i = 0; i < iWordCount; i++) {
-            System.out.println("Ввыдите " + i+1 + " слово массива:");
+            System.out.println("Введите " + i+1 + " слово массива:");
             aWordArray[i] = scanner.next();
         }
 
@@ -23,6 +23,8 @@ public class Wordarray {
             if (sLongWord.length() < aWordArray[i].length())
                 sLongWord = aWordArray[i];
         }
+
+        System.out.println("Самое длинное слово в введенном массиве: " + sLongWord);
 
     }
 
