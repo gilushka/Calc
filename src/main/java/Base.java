@@ -26,6 +26,7 @@ public class Base {
             Wordarray wordarray = new Wordarray();
             wordarray.start();
         }
+        else
             System.out.println("Была выбрана несуществующая операция");
         scanner.close();
 
