@@ -9,8 +9,8 @@ public class Backcounting {
         for (int i = 0; i < 20; i++) {
             iArray[i] = (int) (Math.random()*(20+1)) - 10;
         }
+        System.out.println("Исходный массив:");
         for (int i = 0; i < 20; i++) {
-            System.out.println("Исходный массив:");
             System.out.print(iArray[i] + " ");
         }
         System.out.println();
@@ -28,8 +28,8 @@ public class Backcounting {
         if ((iMaxInd >=0) && (iMinInd >= 0)){
             iArray[iMinInd] = iMax;
             iArray[iMaxInd] = iMin;
+            System.out.println("Итоговый массив: ");
             for (int i = 0; i < 20; i++) {
-                System.out.println("Итоговый массив: ");
                 System.out.print(iArray[i] + " ");
             }
         }

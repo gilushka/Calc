@@ -17,7 +17,7 @@ public class Base {
 
     public static void main(String[] args) {
         System.out.println("Выберете что вы хотите делать дальше.");
-        System.out.println("Если вы хотите поработать с калькулятором, нажмите 1, если с массивами - 2");
+        System.out.println("Если вы хотите поработать с калькулятором, нажмите 1, если с массивами - 2, если хотите чтобы программа сама с собой поразвлекалась - 3");
         Scanner scanner = new Scanner(System.in);
         int iOper = scanner.nextInt();
 
