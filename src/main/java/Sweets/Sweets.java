@@ -1,7 +1,7 @@
 package Sweets;
 
 /**
- * Собираем новогодний подарок. Общий класс сладостей.
+ * Собираем новогодний подарок. Общий абстрактный класс сладостей.
  */
 public abstract class Sweets {
     private String sName;
