@@ -6,6 +6,8 @@ package Sweets;
 public class Biscuit extends Sweets {
     String sForm;
 
+    public Biscuit(){}
+
     public Biscuit(String sName, float fCost, int iWeight, String sForm) {
         super(sName, fCost, iWeight);
         this.sForm = sForm;

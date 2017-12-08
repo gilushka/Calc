@@ -8,6 +8,8 @@ public abstract class Sweets {
     private float fCost;
     private int iWeight;
 
+    public Sweets(){}
+
     public Sweets(String sName, float fCost, int iWeight){
         this.sName = sName;
         this.fCost = fCost;

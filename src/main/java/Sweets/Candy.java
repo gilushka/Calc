@@ -6,6 +6,8 @@ package Sweets;
 public class Candy extends Sweets {
     String sFactory;
 
+    public Candy(){}
+
     public Candy(String sName, float fCost, int iWeight, String sFactory) {
         super(sName, fCost, iWeight);
         this.sFactory = sFactory;
