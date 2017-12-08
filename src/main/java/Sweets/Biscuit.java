@@ -21,6 +21,6 @@ public class Biscuit extends Sweets {
 
     @Override
     public String toString(){
-        return "Конфеты: " + super.toString() + " Форма печенек: " + sForm;
+        return "Печеньки: " + super.toString() + " Форма печенек: " + sForm;
     }
 }
