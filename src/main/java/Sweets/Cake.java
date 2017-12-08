@@ -6,7 +6,7 @@ package Sweets;
 public class Cake extends Sweets {
     String sStuffing;
 
-    public Candy(String sName, float fCost, int iWeight, String sStuffing) {
+    public Cake(String sName, float fCost, int iWeight, String sStuffing) {
         super(sName, fCost, iWeight);
         this.sStuffing = sStuffing;
     }
