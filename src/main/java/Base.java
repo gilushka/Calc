@@ -17,7 +17,8 @@ public class Base {
 
     public static void main(String[] args) {
         System.out.println("Выберете что вы хотите делать дальше.");
-        System.out.println("Если вы хотите поработать с калькулятором, нажмите 1, если с массивами - 2, если хотите чтобы программа сама с собой поразвлекалась - 3");
+        System.out.println("Если вы хотите поработать с калькулятором, нажмите 1, если с массивами - 2, если хотите чтобы программа сама с собой поразвлекалась - 3.");
+        System.out.println("А может вы хотите скомпоновать новогодний подарок? Тогда жмите 4 не стесняясь!");
         Scanner scanner = new Scanner(System.in);
         int iOper = scanner.nextInt();
 
@@ -37,16 +38,6 @@ public class Base {
             default:
                 System.out.println("Была выбрана несуществующая операция");
         }
-/*        if (iOper == 1){
-            Calculator calculator = new Calculator();
-            calculator.start();
-        }
-        else if (iOper == 2){
-            Wordarray wordarray = new Wordarray();
-            wordarray.start();
-        }
-        else
-            System.out.println("Была выбрана несуществующая операция");*/
         scanner.close();
 
     }

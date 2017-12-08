@@ -35,9 +35,6 @@ public class Backcounting {
         }
         else
             System.out.println("Не соблюдены условия задачи");
-//            System.out.println((i+1) + "-й элемент :" + iArray[i]);
-
-
 
     }
 
