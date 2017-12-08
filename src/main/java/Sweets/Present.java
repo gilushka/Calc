@@ -17,6 +17,16 @@ public class Present {
                 int iSweetType = scanner.nextInt();
                 if (iSweetType == 1){
                     Candy candy = new Candy();
+                    System.out.println("Введите название конфеты: ");
+                    candy.setsName(scanner.next());
+                    System.out.println("Сколько конфет вы хотите добавить (в граммах)?");
+                    candy.setiWeight(scanner.nextInt());
+                    System.out.println("Какая цена у этих конфет?");
+                    candy.setfCost(scanner.nextFloat());
+                    System.out.println("Кто произвел эти конфеты?");
+                    candy.setsFactory(scanner.next());
+                }
+                else{
                     
                 }
             }

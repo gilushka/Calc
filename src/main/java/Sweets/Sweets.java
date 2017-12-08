@@ -36,7 +36,7 @@ public abstract class Sweets {
         return iWeight;
     }
 
-    public void setiQuantity(int iWeight) {
+    public void setiWeight(int iWeight) {
         this.iWeight = iWeight;
     }
 
