@@ -10,7 +10,7 @@ public class Present {
     Sweets[] sweets = new Sweets[0];
     double totalWeight = 0;
     double totalCost = 0;
-    
+
     public void addSweet(Sweets item){
         Sweets[] newSweets = new Sweets[sweets.length + 1];
 
