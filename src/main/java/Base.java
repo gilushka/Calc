@@ -1,4 +1,5 @@
 import Calc.Calculator;
+import Sweets.Present;
 import Wordarray.Wordarray;
 import Backcounting.Backcounting;
 //import com.sun.java.util.jar.pack.Instruction;
@@ -35,6 +36,9 @@ public class Base {
                 Backcounting backcounting = new Backcounting();
                 backcounting.start();
                 break;
+            case 4:
+                Present present = new Present();
+                present.start();
             default:
                 System.out.println("Была выбрана несуществующая операция");
         }
